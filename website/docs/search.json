@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nThis is a link to your map\nFancy Maps"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Ayla Hauser",
+    "section": "",
+    "text": "Ayla Hauser is a student at Smith College. She is a neuroscience major and data science minor. When not attending classes, she enjoys competing on the Smith College Tennis Team and reading."
+  },
+  {
+    "objectID": "about.html#student-hours",
+    "href": "about.html#student-hours",
+    "title": "Ayla Hauser",
+    "section": "Student Hours",
+    "text": "Student Hours\nDrop into the office:\n\nWednesday: 1:30-2:30 pm\nBy appointment in McConnell 214\n\nPlease let me know if the above times do not work for your schedule and we can coordinate another time."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Ayla Hauser",
+    "section": "Education",
+    "text": "Education\n\nMS in Data Science (~2026)\nUniversity of Texas at Austin\nAustin, Texas\nMA in Mathematics (2009)\nAppalchain State University\nBoone, NC\nBA in Mathematics (2007)\nUC Santa Cruz\nSanta Cruz, CA"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Ayla Hauser",
+    "section": "Experience",
+    "text": "Experience\n\nProfessor of Mathematics\nHolyoke Community College\nHolyoke, MA 2014–2023"
+  },
+  {
+    "objectID": "maps/first_map.html",
+    "href": "maps/first_map.html",
+    "title": "1st_Maps",
+    "section": "",
+    "text": "#install.packages(\"maps\")\nlibrary(maps)\nHere are some maps from the map package. 1"
+  },
+  {
+    "objectID": "maps/first_map.html#the-world",
+    "href": "maps/first_map.html#the-world",
+    "title": "1st_Maps",
+    "section": "The world",
+    "text": "The world\n\nmap()"
+  },
+  {
+    "objectID": "maps/first_map.html#the-us",
+    "href": "maps/first_map.html#the-us",
+    "title": "1st_Maps",
+    "section": "The US",
+    "text": "The US\n\nmaps::map(database = \"state\")\n\n\n\n\n\n\n\n\n\nmap(database = \"state\", regions = \"Massachusetts\")\n\n\n\n\n\n\n\n\n\nmap(database = \"county\", regions = c(\"Massachusetts\"))\nmap.cities()\n\n\n\n\n\n\n\n\n\nnew_england &lt;-c('Vermont',\"Massachusetts\",\"Connecticut\", \"Rhode Island\", \"New Hampshire\", \"Maine\")\n\nmap(database = \"county\", regions = new_england)\nmap.cities()\n\n\n\n\n\n\n\n\n\nwest_coast &lt;-c(\"California\",\"Oregon\",\"Washington\")\n\ncolors &lt;-c('blue', 'pink', 'orange', 'yellow')\n\nmap(database = \"state\", regions = west_coast, col = colors, fill = TRUE)\n\n\n\n\n\n\n\n\n\nmap(regions = c( \"China\" , \"Indonesia\" , \"Australia\"))\n\n\n\n\n\n\n\n\nYou try:\nFirst maps\n\nAdd another map of California, Oregon and Washington.\n\nColor this map. hint: type ?map() into the console to read the documentation.\n\nColor the map with three colors of your choice.\nColor the border only.\n\n\nMake a world map with China, Indonesia and Australia."
+  },
+  {
+    "objectID": "maps/first_map.html#footnotes",
+    "href": "maps/first_map.html#footnotes",
+    "title": "1st_Maps",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://cran.r-project.org/web/packages/maps/maps.pdf↩︎"
+  },
+  {
+    "objectID": "maps/fancy_maps.html",
+    "href": "maps/fancy_maps.html",
+    "title": "Fancier Maps",
+    "section": "",
+    "text": "We can use leaflet to make some fancier maps.\n\n#install.packages(leaflet)\nlibrary(leaflet)\n\nManual here Here is a text on leaflet.\n\nleaflet()|&gt;\n  addTiles()\n\n\n\n\n?leaflet()\n\nstarting httpd help server ... done\n\n\nLet’s put Smith College on the map. Here’s the lat and long.\n\nleaflet()|&gt;\n  addTiles() |&gt;\n  addMarkers(lng = 72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\")\n\n\n\n\n\nWhooops. We need a negative sign to indicate west.\n\nleaflet()|&gt;\n  addTiles() |&gt;\n  addMarkers(lng = -72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\")\n\n\n\n\n\n\n#we made regular markers for smith and hometown, then added awesome markers to get the school and home icons. \nhome_icon &lt;- awesomeIcons()\nschool_icon &lt;- awesomeIcons(icon = \"education\")\n\n#this is the code that makes the two markers with awesome icons on the map. Remember to use pipe and commas. \nleaflet()|&gt;\n  addTiles() |&gt;\n  addAwesomeMarkers(lng = -83.9207,\n             lat = 35.9606, \n             popup = \"My Home\",\n             label = \"Knoxville\",\n             icon = home_icon\n             ) |&gt;\n addAwesomeMarkers(lng = -72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\", \n             icon = school_icon\n             ) \n\n\n\n\n\nYou try:\n\nPut your home city and Smith College on the same map.\nUse awesomeIcons() to make your home look like a home and smith look like a college.\n\nYou will first need to save the icon an object. (Maybe the home is called home).\nHint: Use icon “education”, “book”, “sleeping” for the college icon.\nThen you will need to use addAwesomeMarkers().\n\nFinally add this webpage to your index.qmd and make sure it renders correctly."
+  }
+]
