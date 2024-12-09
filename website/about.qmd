@@ -1,48 +1,39 @@
 ---
-title: "Ayla Hauser"
+title: "About Me"
 about:
   id: schwab
   template: trestles
-  image: "self.jpg"
-  links:
-
-    - icon: github
-      text: GitHub
-      href: https://github.com/Nics-Github
-    - icon: bookmark
-      text: Smith
-      href: https://www.smith.edu/academics/faculty/nicholas-schwab
+  image: "ayla.jpg.JPG"
+format: 
+  html:
+    theme: minty
+    linestretch: 1.7
 ---
 
-**Ayla Hauser** is a student at Smith College. She is a neuroscience major and data science minor. When not attending classes, she enjoys competing on the Smith College Tennis Team and reading.
+**Ayla Hauser** is a student at Smith College from Knoxville, TN. She is a neuroscience and statistical and data science double major. When not attending class, she is on the tennis court playing for the Smith College Tennis Team. 
 
-## Student Hours
+## Contact Information
 
-
-**Drop into the office:** 
-
--   Wednesday: 1:30-2:30 pm 
-
--   By appointment in McConnell 214
-
-    
-Please let me know if the above times do not work for your schedule and we can coordinate another time.   
+- email: ayla12345@blank.com
+- phone: 123-456-7890
 
 ## Education
-
--   MS in Data Science (\~2026)\
-    [University of Texas at Austin](https://cdso.utexas.edu/msds)\
-    Austin, Texas
--   MA in Mathematics (2009)\
-    [Appalchain State University](https://mathsci.appstate.edu/)\
-    Boone, NC
--   BA in Mathematics (2007)\
-    [UC Santa Cruz](https://www.math.ucsc.edu/)\
-    Santa Cruz, CA
+- **Bearden High School**, Knoxville, TN
+  August 2019 - May 2023
+- **Smith College**, Northampton, MA
+  September 2023 - Current 
 
 ## Experience
 
--   Professor of Mathematics\
-    [Holyoke Community College](https://www.hcc.edu)\
-    Holyoke, MA 2014--2023
+- **NCAA Varsity Student-Athlete:** Player on the Smith College Tennis Team
+  - September 2023 – Current 
 
+- **Smith College’s Student-Athlete Advisory
+Committee:** 
+  - Tennis Representative
+    - September 2024 – Current
+  - Tennis Shadow Representative,
+    - January 2024 - September 2024
+
+- **Tennis Specialist:** In the summer, instructed children ages 5-14 on the basics of tennis. Lead age-specific clinics focused on improving hand-eye coordination, movement, and strategy. Additionally served as a camp counselor as needed. 
+  - May 2023 – August 2024

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tabitha Githinji">
+<meta name="author" content="Ayla Hauser">
+<meta name="dcterms.date" content="2024-12-09">
 
-<title>website - Fancier Maps</title>
+<title>website - SDS 192 Mini-Project 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -100,30 +69,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-
-<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-
-<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-
-<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
-
-<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-
-<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
-
-<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-
-<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-
-<script src="../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
-
-<link href="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
-
-<script src="../site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
-
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -165,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Fancier Maps</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">SDS 192 Mini-Project 1</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -179,21 +124,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#distribution-of-admission-rates-across-college-in-ma2018" id="toc-distribution-of-admission-rates-across-college-in-ma2018" class="nav-link active" data-scroll-target="#distribution-of-admission-rates-across-college-in-ma2018">Distribution of Admission Rates Across College in MA(2018)</a></li>
+  <li><a href="#cost-of-attendance-for-each-type-of-universitycollege" id="toc-cost-of-attendance-for-each-type-of-universitycollege" class="nav-link" data-scroll-target="#cost-of-attendance-for-each-type-of-universitycollege">Cost of Attendance for each Type of University/College</a></li>
+  <li><a href="#blog-post" id="toc-blog-post" class="nav-link" data-scroll-target="#blog-post">Blog post</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fancier Maps</h1>
+<h1 class="title">SDS 192 Mini-Project 1</h1>
+<p class="subtitle lead">SDS 192</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Tabitha Githinji </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Smith College
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Ayla Hauser </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Smith College
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 9, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -203,88 +184,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>We can use leaflet to make some fancier maps.</p>
+<section id="distribution-of-admission-rates-across-college-in-ma2018" class="level1">
+<h1>Distribution of Admission Rates Across College in MA(2018)</h1>
+<p>How do the cost of attendance, and admission rates differ between public and private colleges in Massachusetts for the year 2018?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(leaflet)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><a href="https://cran.r-project.org/web/packages/leaflet/leaflet.pdf">Manual here</a> <a href="https://bookdown.org/nicohahn/making_maps_with_r5/docs/leaflet.html">Here is a text on leaflet.</a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>()<span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-6e762ff8baae25537cc9" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-6e762ff8baae25537cc9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}]},"evals":[],"jsHooks":[]}</script>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>?<span class="fu">leaflet</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>starting httpd help server ... done</code></pre>
+<div>
+<figure class="figure">
+<p><img src="scorecard_analysis_files/figure-html/plot_1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<p>Let’s put Smith College on the map. <a href="https://www.google.com/search?q=smith+college+latitude+and+longitude&amp;client=firefox-b-1-lm&amp;sca_esv=e89764eee12a19ad&amp;ei=ibXQZuWTDJf8ptQP-6iyqQw&amp;oq=smith+college+latitude+and+long&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiH3NtaXRoIGNvbGxlZ2UgbGF0aXR1ZGUgYW5kIGxvbmcqAggAMggQIRigARjDBDIIECEYoAEYwwRI9ylQ_RhY2R5wA3gBkAEAmAGeAaABkAWqAQMwLjW4AQHIAQD4AQGYAgigAsUFwgIKEAAYsAMY1gQYR8ICChAhGKABGMMEGArCAgQQIRgKmAMAiAYBkAYIkgcDMy41oAfwFg&amp;sclient=gws-wiz-serp">Here’s the lat and long.</a></p>
+</div>
+</section>
+<section id="cost-of-attendance-for-each-type-of-universitycollege" class="level1">
+<h1>Cost of Attendance for each Type of University/College</h1>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>()<span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="fl">72.6403</span>,</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">lat =</span> <span class="fl">42.3163</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"Home of the Pioneers"</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> <span class="st">"Smith College"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-a3a7a3c26b0d7c77f5fd" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-a3a7a3c26b0d7c77f5fd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[42.3163,72.6403,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Home of the Pioneers",null,null,null,"Smith College",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[42.3163,42.3163],"lng":[72.6403,72.6403]}},"evals":[],"jsHooks":[]}</script>
+<div>
+<figure class="figure">
+<p><img src="scorecard_analysis_files/figure-html/plot_2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<p>Whooops. We need a negative sign to indicate west.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>()<span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">72.6403</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">lat =</span> <span class="fl">42.3163</span>,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"Home of the Pioneers"</span>,</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> <span class="st">"Smith College"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-a384fcbaa91f478fbb23" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-a384fcbaa91f478fbb23">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[42.3163,-72.6403,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Home of the Pioneers",null,null,null,"Smith College",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[42.3163,42.3163],"lng":[-72.6403,-72.6403]}},"evals":[],"jsHooks":[]}</script>
 </div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#we made regular markers for smith and hometown, then added awesome markers to get the school and home icons. </span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>home_icon <span class="ot">&lt;-</span> <span class="fu">awesomeIcons</span>()</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>school_icon <span class="ot">&lt;-</span> <span class="fu">awesomeIcons</span>(<span class="at">icon =</span> <span class="st">"education"</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#this is the code that makes the two markers with awesome icons on the map. Remember to use pipe and commas. </span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>()<span class="sc">|&gt;</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addAwesomeMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">83.9207</span>,</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">lat =</span> <span class="fl">35.9606</span>, </span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"My Home"</span>,</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> <span class="st">"Knoxville"</span>,</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>             <span class="at">icon =</span> home_icon</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>             ) <span class="sc">|&gt;</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a> <span class="fu">addAwesomeMarkers</span>(<span class="at">lng =</span> <span class="sc">-</span><span class="fl">72.6403</span>,</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>             <span class="at">lat =</span> <span class="fl">42.3163</span>,</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"Home of the Pioneers"</span>,</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">label =</span> <span class="st">"Smith College"</span>, </span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">icon =</span> school_icon</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>             ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-0d45a5788ee725f3ea78" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-0d45a5788ee725f3ea78">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[35.9606,-83.9207,{"icon":"home","markerColor":"blue","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"glyphicon"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"My Home",null,null,null,"Knoxville",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[42.3163,-72.6403,{"icon":"education","markerColor":"blue","iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"glyphicon"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Home of the Pioneers",null,null,null,"Smith College",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[35.9606,42.3163],"lng":[-83.9207,-72.6403]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<p>You try:</p>
-<ol type="1">
-<li><p>Put your home city and Smith College on the same map.</p></li>
-<li><p>Use <code>awesomeIcons()</code> to make your home look like a home and smith look like a college.</p>
-<ol type="i">
-<li><p>You will first need to save the icon an object. (Maybe the home is called home).</p>
-<p>Hint: Use icon “education”, “book”, “sleeping” for the college icon.</p></li>
-<li><p>Then you will need to use <code>addAwesomeMarkers()</code>.</p></li>
-</ol></li>
-<li><p>Finally add this webpage to your index.qmd and make sure it renders correctly.</p></li>
-</ol>
+</section>
+<section id="blog-post" class="level1">
+<h1>Blog post</h1>
+<p>In this blog post, we delve into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive dataset produced by the U.S. Department of Education. This dataset provides a wealth of information on various metrics related to higher education institutions, including tuition costs, graduation rates, and admission statistics. For our analysis, we focus specifically on the year 2018, examining how admission rates and costs of attendance differ between public universities, private nonprofit universities, and private profit universities. Our findings are illustrated through two visualizations: a histogram depicting admission rates and a jitter plot showcasing costs of attendance.</p>
+<p>The first visualization, a histogram, reveals important insights into the distribution of admission rates among Massachusetts colleges. From the histogram, we observe that public universities generally exhibit higher admission rates, clustering between 70% and 90%, while private nonprofit universities display a wider range of admission rates, with many institutions falling below 60%. This indicates that public universities tend to be more accessible to a broader demographic of applicants compared to their private counterparts. The faceting of the histogram by university type allows us to easily compare these patterns, highlighting the distinct roles that public and private institutions play in the higher education landscape.</p>
+<p>In addition to admission rates, our second visualization—a jitter plot—provides a clearer picture of the costs of attendance for these colleges. The jitter plot illustrates that public universities typically have lower costs compared to private nonprofit and private profit institutions. By representing the cost of attendance on the y-axis and the type of university on the x-axis, the plot reveals that many public colleges offer a more affordable option for students. The use of jittering helps to visualize the concentration of costs within each category, showcasing the financial challenges that may be faced by students attending private colleges.</p>
+<p>The key takeaway from our analysis is the stark difference in both admission rates and costs of attendance between public and private colleges in Massachusetts. Public universities generally provide higher admission rates and lower costs, making them more accessible to a wider range of students. In contrast, private nonprofit and private profit institutions often have more selective admission processes and higher tuition fees, which may limit access for some students. However, it is crucial to approach this data with ethical considerations in mind. One primary concern is the representation of marginalized student groups in the dataset. While the College Scorecard provides valuable insights, it may not fully capture the unique barriers faced by students from low-income backgrounds or underrepresented communities. Furthermore, the dataset relies heavily on quantitative metrics, which can overlook qualitative aspects of students’ experiences and the broader context of their educational journeys.</p>
+<p>In summary, our visualizations of admission rates and costs of attendance among Massachusetts colleges underscore important trends in accessibility and affordability. As we analyze such datasets, it is essential to remain aware of the ethical implications and potential biases inherent in the data collection process, ensuring that our findings contribute to a more equitable understanding of higher education access and opportunities for all students.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

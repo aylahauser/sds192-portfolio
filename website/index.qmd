@@ -1,11 +1,38 @@
 ---
-title: "website"
+title: "SDS 192 Portfolio"
+format: 
+  html:
+    theme: minty
 ---
 
-This is a Quarto website.
+Hi! Welcome to Ayla Hauser's SDS 192 Fall 2024 Portfolio. I hope you can enjoy looking through what I have been working on this semester. If you would like to learn more about me, visit my [about me](about.qmd).
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Featured:
+Throughout the semester I have created numerous figures and tables, here are a few that I really loved! 
 
-[This is a link to your map](maps/first_map.qmd)
+#### Figure 1:
+![Figure 1](featured/spotify.png)
+In **lab 3**, I accessed data about the music artist Lizzy McAlpine. This figure visualizes the distribution of duration of songs in each of Lizzy Mcalpine's albums. 
 
-[Fancy Maps](maps/fancy_maps.qmd)
+#### Figure 2:
+![Figure 2](featured/policing.png)
+In **lab 4**, I replicated a data analysis performed by the NYCLU to show the unconstitutionality of practices being exhibited by the NYPD in 2011. This figure displays the proportions of percent frisked by NYPD by race. 
+
+#### Figure 3:
+![Figure 3](featured/health.png)
+In **lab 2**, I worked with a data resource from the University of Wisconsin Population Health Institute. This scatterplot shows the relationship between the life expectancy, reported physically unhealthy days, and median household income.
+
+#### Figure 4:
+![Figure 4](featured/monarchs.png)
+In **lab 7** I mapped the sightings of monarch butterflies  using data from monarch watch. This chloropleth map shows the proportion between monarch sightings and state populations in the United States. 
+
+# Projects:
+We completed 3 projects in this course, ranging from election contributions to chipotle locations. Below are links to each completed project. 
+
+[Project 1](projects/scorecard_analysis.qmd) delves into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive data set produced by the U.S. Department of Education.
+
+[Project 2](projects/fec-analysis.qmd) uses data from the Federal Election Commission (FEC) in the 2015-2016 election cycle to explore the total amount of money spend by candidates and their committees during their campaigns. 
+
+
+[Project 3](projects/mapping.qmd) utilized data collected by [Jeffery Braun about Chipotle store locations](https://www.kaggle.com/datasets/jeffreybraun/chipotle-locations) to analyze the locations of Chipotle restaurants in the United States. 
+
