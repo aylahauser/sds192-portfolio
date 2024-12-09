@@ -1,9 +1,0 @@
----
-title: "Page Not Found"
-author: "Ayla Hauser"
-format: html
----
-
-# You got lost. Page not Found. 
-
-Go back to the [exciting portfolio](index.qmd)
