@@ -1,0 +1,146 @@
+---
+title: "SDS 192 Project 3"
+subtitle: "Maps"
+author: 
+- name: Ayla Hauser
+  affiliation: Smith College
+- name: Aviva Jotzke
+  affiliation: Smith College
+date: "`r format(Sys.Date(), '%B %e, %Y')`"
+editor: 
+  mode: source
+output: 
+  html_document:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    theme: lumen
+    df_print: paged
+    code_folding: show
+execute:
+  echo: False
+  warning: False
+---
+
+```{r setup}
+# Include all libraries you may need for your project here. 
+
+library(tidyverse)
+library(janitor)
+library(tidygeocoder)
+library(sf)
+library(tidycensus)
+library(maps)
+library(glue)
+
+```
+
+```{r helper-chunk}
+# If you need to read in csv data do it here. 
+chipotle_loc <- read.csv("chipotle_stores.csv")
+```
+
+# Chipotle Population Map
+```{r analysis-1}
+#| label: fig-chipotle_pop
+#| fig-cap: "Displays the density of Chipotles in the US relative to state population."
+# Group member 1 work here!
+
+# Making a US map of the lower 48 states (there's no Chipotle in Alaska or Hawaii!)
+USA_map <-  maps::map("state", plot = FALSE, fill = TRUE) |> st_as_sf(coords = c("x", "y"), crs = 4326)
+
+# Creating a data frame of state populations
+US_pop <- 
+  tidycensus::get_acs(
+    geography = "state", 
+    variables = "B01003_001"  ) |>
+  mutate(NAME = tolower(NAME))
+
+# Creating summary statistics for Chipotle locations per state
+chip_sum <- chipotle_loc|>
+  group_by(state)|>
+  summarise(num_chip = n())|>
+  mutate("ID" = tolower(state))
+
+# Recoding Washington DC
+chip_sum$ID <- chip_sum$ID|>
+  recode("washington dc" = "district of columbia")
+
+# Joining population data to Chipotle summary statistics
+chip_pop_joined <- left_join(chip_sum, US_pop, join_by("ID" == "NAME"))
+
+# Joining USA_map with chip_pop_joined to get geometry shapes in there
+chip_map_joined <- left_join(USA_map, chip_pop_joined, join_by("ID"))
+
+# Renaming the population variable and selecting only relevant variables and calculating the number of Chipotles as a proportion of the state population
+chip_map <- chip_map_joined|>
+  mutate(population = estimate)|>
+  select(ID, num_chip, population, geom)|>
+  mutate(prop_chip = num_chip/population*1000000)|>
+  mutate(prop_chip_discrete = cut(prop_chip, breaks = c(0, 4, 8, 32)))
+
+# Plotting map
+chip_map|>
+  ggplot()+
+  geom_sf(aes(geometry = geom, fill = prop_chip_discrete), color = "Black")+
+  scale_fill_brewer(palette = c("YlOrBr"), direction = 1)+
+  labs(title = "Number of Chipotles Per State, Proportional to Population",
+       subtitle = "Population data from US 2022 Census. Chipotle data from 2020, collected by Jeffery Braun.",
+       caption = "Map created by Aviva Jotzke for SDS 192, Fall 2024",
+       fill = "Chipotles Per Million People")+
+  theme_minimal()+
+  theme(axis.text = element_blank(), line = element_blank())
+
+```
+
+# Locations of Chipotle in MA
+```{r analysis-2}
+#| label: fig-chipotle_MA
+#| fig-cap: "Exact Locations of Chipotles in MA"
+# Group member 2 work here!
+
+#function that takes in a state name and outputs a map of the chipotle locations in that state.
+
+get_map_chipotle <- function(specific_state){
+  
+  state_lower <- tolower(specific_state)
+  
+  state_map <- maps::map("state", regions = state_lower,  plot = FALSE, fill = TRUE) |>
+  st_as_sf(coords = c("x", "y"), crs = 4326)
+
+address <- chipotle_loc |>
+  mutate(lower = tolower(state)) |>
+    filter(lower == state_lower) |>
+    st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
+  
+  ggplot() +
+    geom_sf(data = state_map, fill = "moccasin") +
+    geom_sf(data = address, color = "brown") +
+    theme_minimal() +
+    theme(
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    axis.text = element_blank()) +
+    labs(title = glue("Chipotle Locations in {specific_state}"),
+         subtitle = "Chipotle Data from 2020, created by Jeffrey Braun",
+         caption = "Map Created by Ayla Hauser for SDS 192, Fall 2024")
+
+}
+
+get_map_chipotle("Massachusetts")
+
+```
+
+# Blog post
+
+For this project, we utilized data collected by [Jeffery Braun about Chipotle store locations](https://www.kaggle.com/datasets/jeffreybraun/chipotle-locations). This data was collected from Chipotle websites in 2020 and represents all 50 states excluding Hawaii, Alaska, and South Dakota. Since the collection of this data, South Dakota has attained a Chipotle. This data frame includes information on the state, city, address, longitude, and latitude of all Chipotle locations in the US. 
+
+Our first map displays the density of Chipotles in the US relative to population. There doesn’t appear to be a strong relationship between the region of the country and the number of Chipotles in a state. Overall, there are not many Chipotles per capita in the country's Northwest and Southeast quadrants. In the Southwest and Northeast quadrants, Chipotle density is more variable and appears to vary on a state-by-state basis. 
+
+Our second map pinpoints the specific locations of Chipotles in Massachusetts. Upon observing the map, it can be seen that Chipotle’s are mainly located in the Eastern part of the state, with the majority of them clustering in Boston. Boston is the most populated city in Massachusetts; thus, the number of Chipotles tends to increase in more urban areas. This can be seen again with the second largest number of Chipotles being located around Springfield, the third largest city by population in Massachusetts. 
+
+While we see no ethical concerns with the way *we* used this data, the creator of the data set noted some ethical/legal concerns with the collection of the data. Braun noted that he was unsure the legality of scraping this data from Chipotle’s website. However, another company was selling the data so he presumed it was at the very least legal. Because this data set contains information that is already public and does not include information personal to individual people, we believe it to be ethically sourced and used. 
+
+
+
+

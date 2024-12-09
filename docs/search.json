@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SDS 192 Portfolio",
+    "section": "",
+    "text": "Hi! Welcome to Ayla Hauser’s SDS 192 Fall 2024 Portfolio. I hope you can enjoy looking through what I have been working on this semester. If you would like to learn more about me, visit my about me.\n\nFeatured:\nThroughout the semester I have created numerous figures and tables, here are a few that I really loved!\n\nFigure 1:\n In lab 3, I accessed data about the music artist Lizzy McAlpine. This figure visualizes the distribution of duration of songs in each of Lizzy Mcalpine’s albums.\n\n\nFigure 2:\n In lab 4, I replicated a data analysis performed by the NYCLU to show the unconstitutionality of practices being exhibited by the NYPD in 2011. This figure displays the proportions of percent frisked by NYPD by race.\n\n\nFigure 3:\n In lab 2, I worked with a data resource from the University of Wisconsin Population Health Institute. This scatterplot shows the relationship between the life expectancy, reported physically unhealthy days, and median household income.\n\n\nFigure 4:\n In lab 7 I mapped the sightings of monarch butterflies using data from monarch watch. This chloropleth map shows the proportion between monarch sightings and state populations in the United States.\n\n\n\nProjects:\nWe completed 3 projects in this course, ranging from election contributions to chipotle locations. Below are links to each completed project.\nProject 1 delves into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive data set produced by the U.S. Department of Education.\nProject 2 uses data from the Federal Election Commission (FEC) in the 2015-2016 election cycle to explore the total amount of money spend by candidates and their committees during their campaigns.\nProject 3 utilized data collected by Jeffery Braun about Chipotle store locations to analyze the locations of Chipotle restaurants in the United States."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Ayla Hauser is a student at Smith College from Knoxville, TN. She is a neuroscience and statistical and data science double major. When not attending class, she is on the tennis court playing for the Smith College Tennis Team."
+  },
+  {
+    "objectID": "about.html#student-hours",
+    "href": "about.html#student-hours",
+    "title": "Ayla Hauser",
+    "section": "Student Hours",
+    "text": "Student Hours\nDrop into the office:\n\nWednesday: 1:30-2:30 pm\nBy appointment in McConnell 214\n\nPlease let me know if the above times do not work for your schedule and we can coordinate another time."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nBearden High School, Knoxville, TN August 2019 - May 2023\nSmith College, Northampton, MA September 2023 - Current"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About Me",
+    "section": "Experience",
+    "text": "Experience\n\nNCAA Varsity Student-Athlete: Player on the Smith College Tennis Team\n\nSeptember 2023 – Current\n\nSmith College’s Student-Athlete Advisory Committee:\n\nTennis Representative\n\nSeptember 2024 – Current\n\nTennis Shadow Representative,\n\nJanuary 2024 - September 2024\n\n\nTennis Specialist: In the summer, instructed children ages 5-14 on the basics of tennis. Lead age-specific clinics focused on improving hand-eye coordination, movement, and strategy. Additionally served as a camp counselor as needed.\n\nMay 2023 – August 2024"
+  },
+  {
+    "objectID": "maps/first_map.html",
+    "href": "maps/first_map.html",
+    "title": "1st_Maps",
+    "section": "",
+    "text": "#install.packages(\"maps\")\nlibrary(maps)\nHere are some maps from the map package. 1"
+  },
+  {
+    "objectID": "maps/first_map.html#the-world",
+    "href": "maps/first_map.html#the-world",
+    "title": "1st_Maps",
+    "section": "The world",
+    "text": "The world\n\nmap()"
+  },
+  {
+    "objectID": "maps/first_map.html#the-us",
+    "href": "maps/first_map.html#the-us",
+    "title": "1st_Maps",
+    "section": "The US",
+    "text": "The US\n\nmaps::map(database = \"state\")\n\n\n\n\n\n\n\n\n\nmap(database = \"state\", regions = \"Massachusetts\")\n\n\n\n\n\n\n\n\n\nmap(database = \"county\", regions = c(\"Massachusetts\"))\nmap.cities()\n\n\n\n\n\n\n\n\n\nnew_england &lt;-c('Vermont',\"Massachusetts\",\"Connecticut\", \"Rhode Island\", \"New Hampshire\", \"Maine\")\n\nmap(database = \"county\", regions = new_england)\nmap.cities()\n\n\n\n\n\n\n\n\n\nwest_coast &lt;-c(\"California\",\"Oregon\",\"Washington\")\n\ncolors &lt;-c('blue', 'pink', 'orange', 'yellow')\n\nmap(database = \"state\", regions = west_coast, col = colors, fill = TRUE)\n\n\n\n\n\n\n\n\n\nmap(regions = c( \"China\" , \"Indonesia\" , \"Australia\"))\n\n\n\n\n\n\n\n\nYou try:\nFirst maps\n\nAdd another map of California, Oregon and Washington.\n\nColor this map. hint: type ?map() into the console to read the documentation.\n\nColor the map with three colors of your choice.\nColor the border only.\n\n\nMake a world map with China, Indonesia and Australia."
+  },
+  {
+    "objectID": "maps/first_map.html#footnotes",
+    "href": "maps/first_map.html#footnotes",
+    "title": "1st_Maps",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://cran.r-project.org/web/packages/maps/maps.pdf↩︎"
+  },
+  {
+    "objectID": "maps/fancy_maps.html",
+    "href": "maps/fancy_maps.html",
+    "title": "Fancier Maps",
+    "section": "",
+    "text": "We can use leaflet to make some fancier maps.\n\n#install.packages(leaflet)\nlibrary(leaflet)\n\nManual here Here is a text on leaflet.\n\nleaflet()|&gt;\n  addTiles()\n\n\n\n\n?leaflet()\n\nstarting httpd help server ... done\n\n\nLet’s put Smith College on the map. Here’s the lat and long.\n\nleaflet()|&gt;\n  addTiles() |&gt;\n  addMarkers(lng = 72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\")\n\n\n\n\n\nWhooops. We need a negative sign to indicate west.\n\nleaflet()|&gt;\n  addTiles() |&gt;\n  addMarkers(lng = -72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\")\n\n\n\n\n\n\n#we made regular markers for smith and hometown, then added awesome markers to get the school and home icons. \nhome_icon &lt;- awesomeIcons()\nschool_icon &lt;- awesomeIcons(icon = \"education\")\n\n#this is the code that makes the two markers with awesome icons on the map. Remember to use pipe and commas. \nleaflet()|&gt;\n  addTiles() |&gt;\n  addAwesomeMarkers(lng = -83.9207,\n             lat = 35.9606, \n             popup = \"My Home\",\n             label = \"Knoxville\",\n             icon = home_icon\n             ) |&gt;\n addAwesomeMarkers(lng = -72.6403,\n             lat = 42.3163,\n             popup = \"Home of the Pioneers\",\n             label = \"Smith College\", \n             icon = school_icon\n             ) \n\n\n\n\n\nYou try:\n\nPut your home city and Smith College on the same map.\nUse awesomeIcons() to make your home look like a home and smith look like a college.\n\nYou will first need to save the icon an object. (Maybe the home is called home).\nHint: Use icon “education”, “book”, “sleeping” for the college icon.\nThen you will need to use addAwesomeMarkers().\n\nFinally add this webpage to your index.qmd and make sure it renders correctly."
+  },
+  {
+    "objectID": "projects/scorecard_analysis.html",
+    "href": "projects/scorecard_analysis.html",
+    "title": "SDS 192 Mini-Project 1",
+    "section": "",
+    "text": "Distribution of Admission Rates Across College in MA(2018)\nHow do the cost of attendance, and admission rates differ between public and private colleges in Massachusetts for the year 2018?\n\n\n\n\n\n\n\n\n\n\n\nCost of Attendance for each Type of University/College\n\n\n\n\n\n\n\n\n\n\n\nBlog post\nIn this blog post, we delve into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive dataset produced by the U.S. Department of Education. This dataset provides a wealth of information on various metrics related to higher education institutions, including tuition costs, graduation rates, and admission statistics. For our analysis, we focus specifically on the year 2018, examining how admission rates and costs of attendance differ between public universities, private nonprofit universities, and private profit universities. Our findings are illustrated through two visualizations: a histogram depicting admission rates and a jitter plot showcasing costs of attendance.\nThe first visualization, a histogram, reveals important insights into the distribution of admission rates among Massachusetts colleges. From the histogram, we observe that public universities generally exhibit higher admission rates, clustering between 70% and 90%, while private nonprofit universities display a wider range of admission rates, with many institutions falling below 60%. This indicates that public universities tend to be more accessible to a broader demographic of applicants compared to their private counterparts. The faceting of the histogram by university type allows us to easily compare these patterns, highlighting the distinct roles that public and private institutions play in the higher education landscape.\nIn addition to admission rates, our second visualization—a jitter plot—provides a clearer picture of the costs of attendance for these colleges. The jitter plot illustrates that public universities typically have lower costs compared to private nonprofit and private profit institutions. By representing the cost of attendance on the y-axis and the type of university on the x-axis, the plot reveals that many public colleges offer a more affordable option for students. The use of jittering helps to visualize the concentration of costs within each category, showcasing the financial challenges that may be faced by students attending private colleges.\nThe key takeaway from our analysis is the stark difference in both admission rates and costs of attendance between public and private colleges in Massachusetts. Public universities generally provide higher admission rates and lower costs, making them more accessible to a wider range of students. In contrast, private nonprofit and private profit institutions often have more selective admission processes and higher tuition fees, which may limit access for some students. However, it is crucial to approach this data with ethical considerations in mind. One primary concern is the representation of marginalized student groups in the dataset. While the College Scorecard provides valuable insights, it may not fully capture the unique barriers faced by students from low-income backgrounds or underrepresented communities. Furthermore, the dataset relies heavily on quantitative metrics, which can overlook qualitative aspects of students’ experiences and the broader context of their educational journeys.\nIn summary, our visualizations of admission rates and costs of attendance among Massachusetts colleges underscore important trends in accessibility and affordability. As we analyze such datasets, it is essential to remain aware of the ethical implications and potential biases inherent in the data collection process, ensuring that our findings contribute to a more equitable understanding of higher education access and opportunities for all students."
+  },
+  {
+    "objectID": "maps/function_map.html",
+    "href": "maps/function_map.html",
+    "title": "Where we’re from.",
+    "section": "",
+    "text": "#install.packages(googlesheets4)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(maps)\n\n\nAttaching package: 'maps'\n\nThe following object is masked from 'package:purrr':\n\n    map\n\nlibrary(googlesheets4)\n\n\nclass_info &lt;- read_sheet(\"https://docs.google.com/spreadsheets/d/1XOAFQvBcFvhKwEl5xH6l3nRJK2Wk0hWZ18S9kAZclQ0/edit?usp=sharing\") |&gt;\n  janitor::clean_names()\n\n! Using an auto-discovered, cached token.\n  To suppress this message, modify your code or options to clearly consent to\n  the use of a cached token.\n  See gargle's \"Non-interactive auth\" vignette for more details:\n  &lt;https://gargle.r-lib.org/articles/non-interactive-auth.html&gt;\nℹ The googlesheets4 package is using a cached token for 'adhauser@smith.edu'.\nAuto-refreshing stale OAuth token.\n✔ Reading from \"Fall 2024  Questionnaire (Responses)\".\n✔ Range 'Form Responses 1'.\n\n# selecting only the column we are interested in and making it into a vector.\ncountry_vector &lt;- as.vector( \n  class_info |&gt;\n    select(\"country\"))\n\n\nclass_maps &lt;- function(country_vector){\n  \n  map(regions = country_vector$country) \n      \n}\n  \n\n\n\n# If the line below throws an error its possible your country is not in the database or mispelled. \nclass_maps(country_vector)\n\n\n\n\n\n\n\n\n\n# A function for finding appropriate names of countries\n\n# A test vector\nsub_vector&lt;- c(\"China\", \"USA\", \"Afghanistan\")\n\nmap_names &lt;- function(name){\n  # The first line makes sure we have a string\n  name &lt;- as.character(name)\n  \n  # All 1600 names are in the database can be save as follows\n  vector_of_names &lt;- map(plot = FALSE)$names\n  \n  # This gets a vector of boolean values. \n  Truths &lt;- name %in% vector_of_names\n  \n  \n  print(\"The following countries are in the databse\")\n  \n  # This goes back to our original vector and extrance only the true names. \n  print(name[Truths])\n  \n  print(\"The following countries are not in the database\")\n  \n  # This goes back to 2our original vector and extrance only the true names. \n  print(name[Truths == FALSE])\n  \n}\nmap_names(sub_vector)\n\n[1] \"The following countries are in the databse\"\n[1] \"China\"       \"USA\"         \"Afghanistan\"\n[1] \"The following countries are not in the database\"\ncharacter(0)"
+  },
+  {
+    "objectID": "maps/to_dos.html",
+    "href": "maps/to_dos.html",
+    "title": "Tasks",
+    "section": "",
+    "text": "Make a website\n\nRender your index.qmd to make your website.\n\nIf the website doesn’t pop up go docs/index.html to look at it.\nDelete the file called first_map_files, what happens to your first map page?\n\nAdd the overview of the course to the the index as a link.\n\nEdit the about\nEdit the about.qmd to have some information about you. At the moment it is all about me. Render often and figure out what is changing as you edit."
+  },
+  {
+    "objectID": "about.html#contact-information",
+    "href": "about.html#contact-information",
+    "title": "About Me",
+    "section": "Contact Information",
+    "text": "Contact Information\n\nemail: ayla12345@blank.com\nphone: 123-456-7890"
+  },
+  {
+    "objectID": "index.html#projects",
+    "href": "index.html#projects",
+    "title": "SDS 192 Portfolio",
+    "section": "Projects:",
+    "text": "Projects:\nProject 1\nProject 2\nProject 3"
+  },
+  {
+    "objectID": "projects/fec-analysis.html",
+    "href": "projects/fec-analysis.html",
+    "title": "SDS 192 Project 2",
+    "section": "",
+    "text": "Contributions of Candidates in MA\n\n\n\n\nTable 1: The total amount of money each candidate and candidate committees are contributing in Massachusetts from 2015 to 2016.\n\n\n\n\n\n\nElizabeth Warren\nJoe Kennedy\nEdward Markey\nStephen Lynch\n\n\n\n\n44500\n40000\n68000\n9000\n\n\n\n\n\n\n\n\n\n\nTotal Disbursements in 2015-2016 Senate Races\n\n\n\n\n\n\n\n\nFigure 1: Amount of money that was disbursed by both winning and losing candidates in the 2015-2016 Senate races.\n\n\n\n\n\n\n\nBlog post\nIn the 2015-2016 election cycle, the Federal Election Commission (FEC) provided detailed data on campaign contributions from candidates, committees, and political organizations. For this analysis, we focused specifically on Boston, Massachusetts, where we aimed to explore the total amount of money spent by candidates and their committees during their campaigns. The primary question guiding this analysis was: How much did each candidate and their committees spend in Massachusetts, and did the amount of money spent influence their success in the elections?\nOur first step was to filter the dataset to include only contributions from candidates and candidate committees in Massachusetts, excluding irrelevant entries such as unreported or unknown contributions. We then calculated the total transaction amounts for four major candidates: Joe Kennedy, Stephen Lynch, Elizabeth Warren, and Edward Markey. We found that Elizabeth Warren and Edward Markey, both U.S. Senators, had the highest contributions, with Warren receiving $44,500 and Markey receiving $68,000. In comparison, the two congressional candidates, Joe Kennedy and Stephen Lynch, had much lower amounts, with Kennedy receiving $40,000 and Lynch receiving $9,000. These results suggest that Senate candidates generally raised more money than their congressional counterparts, which led us to explore the broader relationship between campaign spending and electoral success.\nTo further investigate, we turned our attention to the relationship between campaign spending and election outcomes. We examined how much money was disbursed by both winning and losing candidates in the 2015-2016 Senate races. Our analysis revealed a clear pattern: candidates who spent more money were more likely to win their races. When analyzing the total disbursements, it was evident that candidates who lost tended to have lower spending, while those who won had substantial campaign expenditures. This correlation highlights the importance of funding in securing electoral victories, although it also raises questions about the fairness of a system that potentially favors wealthier candidates.\nOne key takeaway from this analysis is the significant role money plays in determining the success of political candidates. While campaign contributions are necessary to run competitive campaigns, the findings underscore potential ethical concerns when joining data from different sources. For instance, when merging datasets like contributions and election results, it’s crucial to ensure that data integrity is maintained, particularly when using information from different times or data frames. There’s also a risk of data being incomplete or biased, which could skew analysis and lead to misleading conclusions. Therefore, transparency and careful data handling are essential in drawing ethical and accurate insights from such complex datasets."
+  },
+  {
+    "objectID": "projects/mapping.html",
+    "href": "projects/mapping.html",
+    "title": "SDS 192 Project 3",
+    "section": "",
+    "text": "Chipotle Population Map\n\n\n\n\n\n\n\n\nFigure 1: Displays the density of Chipotles in the US relative to state population.\n\n\n\n\n\n\n\nLocations of Chipotle in MA\n\n\n\n\n\n\n\n\nFigure 2: Exact Locations of Chipotles in MA\n\n\n\n\n\n\n\nBlog post\nFor this project, we utilized data collected by Jeffery Braun about Chipotle store locations. This data was collected from Chipotle websites in 2020 and represents all 50 states excluding Hawaii, Alaska, and South Dakota. Since the collection of this data, South Dakota has attained a Chipotle. This data frame includes information on the state, city, address, longitude, and latitude of all Chipotle locations in the US.\nOur first map displays the density of Chipotles in the US relative to population. There doesn’t appear to be a strong relationship between the region of the country and the number of Chipotles in a state. Overall, there are not many Chipotles per capita in the country’s Northwest and Southeast quadrants. In the Southwest and Northeast quadrants, Chipotle density is more variable and appears to vary on a state-by-state basis.\nOur second map pinpoints the specific locations of Chipotles in Massachusetts. Upon observing the map, it can be seen that Chipotle’s are mainly located in the Eastern part of the state, with the majority of them clustering in Boston. Boston is the most populated city in Massachusetts; thus, the number of Chipotles tends to increase in more urban areas. This can be seen again with the second largest number of Chipotles being located around Springfield, the third largest city by population in Massachusetts.\nWhile we see no ethical concerns with the way we used this data, the creator of the data set noted some ethical/legal concerns with the collection of the data. Braun noted that he was unsure the legality of scraping this data from Chipotle’s website. However, another company was selling the data so he presumed it was at the very least legal. Because this data set contains information that is already public and does not include information personal to individual people, we believe it to be ethically sourced and used."
+  }
+]
