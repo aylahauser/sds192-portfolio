@@ -12,6 +12,11 @@ website:
         text: About
   sidebar: 
       - href: projects/scorecard_analysis.qmd
+        text: Project 1
+      - href: projects/fec-analysis.qmd
+        text: Project 2
+      - href: projects/mapping.qmd
+        text: Project 3
 
 format:
   html:
