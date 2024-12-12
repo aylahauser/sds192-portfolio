@@ -5,10 +5,10 @@ format:
     theme: minty
 ---
 
-Hi! Welcome to Ayla Hauser's SDS 192 Fall 2024 Portfolio. I hope you can enjoy looking through what I have been working on this semester. If you would like to learn more about me, visit my [about me](about.qmd).
+Welcome to Ayla Hauser's SDS 192 Fall 2024 Portfolio. I hope you can enjoy looking through what I have been working on this semester. If you would like to learn more about me, visit my [about me](about.qmd).
 
 # Featured:
-Throughout the semester I have created numerous figures and tables, here are a few that I really loved! 
+Throughout the semester I have created numerous figures and tables, here are a few that stuck out to me. 
 
 #### Figure 1:
 ![Figure 1](featured/spotify.png)
@@ -27,7 +27,7 @@ In **lab 2**, I worked with a data resource from the University of Wisconsin Pop
 In **lab 7** I mapped the sightings of monarch butterflies  using data from monarch watch. This chloropleth map shows the proportion between monarch sightings and state populations in the United States. 
 
 # Projects:
-We completed 3 projects in this course, ranging from election contributions to chipotle locations. Below are links to each completed project. 
+We completed 3 projects in this course, ranging from election contributions to restuarant chain locations. Below are links to each completed project. 
 
 [Project 1](projects/scorecard_analysis.qmd) delves into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive data set produced by the U.S. Department of Education.
 
