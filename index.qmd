@@ -27,7 +27,7 @@ In **lab 2**, I worked with a data resource from the University of Wisconsin Pop
 In **lab 7** I mapped the sightings of monarch butterflies  using data from monarch watch. This chloropleth map shows the proportion between monarch sightings and state populations in the United States. 
 
 # Projects:
-We completed 3 projects in this course, ranging from election contributions to restuarant chain locations. Below are links to each completed project. 
+We completed 3 projects in this course, ranging from election contributions to restaurant chain locations. Below are links to each completed project. 
 
 [Project 1](projects/scorecard_analysis.qmd) delves into the admission rates and costs of attendance for colleges in Massachusetts, using data from the College Scorecard, a comprehensive data set produced by the U.S. Department of Education.
 
